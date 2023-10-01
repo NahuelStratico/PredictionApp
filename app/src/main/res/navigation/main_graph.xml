@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/predictionFragment">
+    <fragment
+        android:id="@+id/predictionFragment"
+        android:name="com.nahuel.predictionapp.ui.prediction.PredictionFragment"
+        android:label="fragment_prediction"
+        tools:layout="@layout/fragment_prediction" />
+    <fragment
+        android:id="@+id/palmistryFragment"
+        android:name="com.nahuel.predictionapp.ui.palmistry.PalmistryFragment"
+        android:label="fragment_palmistry"
+        tools:layout="@layout/fragment_palmistry" />
+    <fragment
+        android:id="@+id/luckFragment"
+        android:name="com.nahuel.predictionapp.ui.luck.LuckFragment"
+        android:label="fragment_luck"
+        tools:layout="@layout/fragment_luck" />
+</navigation>
