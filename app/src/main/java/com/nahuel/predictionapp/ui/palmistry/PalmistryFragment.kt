@@ -8,7 +8,9 @@ import android.view.ViewGroup
 import com.nahuel.predictionapp.R
 import com.nahuel.predictionapp.databinding.FragmentPalmistryBinding
 import com.nahuel.predictionapp.databinding.FragmentPredictionBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class PalmistryFragment : Fragment() {
 
     private var _binding: FragmentPalmistryBinding? = null

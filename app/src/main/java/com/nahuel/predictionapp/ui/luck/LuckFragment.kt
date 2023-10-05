@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import com.nahuel.predictionapp.R
 import com.nahuel.predictionapp.databinding.FragmentLuckBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class LuckFragment : Fragment() {
 
     private var _binding: FragmentLuckBinding? = null
