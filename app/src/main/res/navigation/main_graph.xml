@@ -8,7 +8,11 @@
         android:id="@+id/predictionFragment"
         android:name="com.nahuel.predictionapp.ui.prediction.PredictionFragment"
         android:label="fragment_prediction"
-        tools:layout="@layout/fragment_prediction" />
+        tools:layout="@layout/fragment_prediction" >
+        <action
+            android:id="@+id/action_predictionFragment_to_predictionDetailActivity"
+            app:destination="@id/predictionDetailActivity" />
+    </fragment>
     <fragment
         android:id="@+id/palmistryFragment"
         android:name="com.nahuel.predictionapp.ui.palmistry.PalmistryFragment"
@@ -19,4 +23,13 @@
         android:name="com.nahuel.predictionapp.ui.luck.LuckFragment"
         android:label="fragment_luck"
         tools:layout="@layout/fragment_luck" />
+    <activity
+        android:id="@+id/predictionDetailActivity"
+        android:name="com.nahuel.predictionapp.ui.detail.PredictionDetailActivity"
+        android:label="activity_prediction_detail"
+        tools:layout="@layout/activity_prediction_detail" >
+        <argument
+            android:name="type"
+            app:argType="com.nahuel.predictionapp.domain.model.PredictionModel" />
+    </activity>
 </navigation>
